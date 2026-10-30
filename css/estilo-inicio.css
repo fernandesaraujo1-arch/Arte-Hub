@@ -31,6 +31,12 @@ a
 {
     text-decoration: none;
 }
+nav
+{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
 .container
 {
     display: flex;
