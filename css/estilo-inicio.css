@@ -49,3 +49,38 @@ a
     color: var(--cor-texto-secundario);
     font-family: serif;
 }
+.sidebar {
+    width: 230px;
+    background-color: var(--cor-principal);
+    padding: 40px 30px;
+    border-right: 1px solid var(--cor-secundario);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.logo {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #C45A43;
+}
+.menu-navegaçao ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.menu-navegaçao a {
+    text-decoration: none;
+    color: #285C63;
+    font-size: 1.05rem;
+    font-weight: 600
+}
+.menu-navegaçao a:hover, 
+.menu-navegaçao a.active {
+    color: #183047;
+}
+.container-geral {
+    display: flex;
+    min-height: 100vh;
+}
