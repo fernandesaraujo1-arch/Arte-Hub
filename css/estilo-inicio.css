@@ -36,6 +36,31 @@ p
     text-align: justify;
     color: var(--cor-texto-secundario);
 }
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+aside 
+{
+    width: 220px;
+    flex-shrink: 0;
+}
+.pagina
+{
+    flex: 1;
+    min-width: 0;
+}
+header
+{
+    width: 100%;
+}
+main
+{
+    width: 100%
+}
 .topo
 {
     padding: 20px;
@@ -86,6 +111,11 @@ p
     color: #183047;
 }
 .container-geral {
+    display: flex;
+    min-height: 100vh;
+}
+.layout 
+{
     display: flex;
     min-height: 100vh;
 }
