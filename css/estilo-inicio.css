@@ -22,43 +22,7 @@ a
 {
     text-decoration: none;
 }
-<<<<<<< HEAD
 .container-geral {
-=======
-p
-{
-    text-align: justify;
-    color: var(--cor-texto-secundario);
-}
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-aside 
-{
-    width: 220px;
-    flex-shrink: 0;
-}
-.pagina
-{
-    flex: 1;
-    min-width: 0;
-}
-header
-{
-    width: 100%;
-}
-main
-{
-    width: 100%
-}
-.topo
-{
-    padding: 20px;
->>>>>>> c4689cd4c4e2bf98d743232bc35938b47f363955
     display: flex;
     min-height: 100vh;
 }
@@ -70,6 +34,7 @@ main
     display: flex;
     flex-direction: column;
     gap: 50px;
+    position: fixed;
 }
 .logo {
     font-family: 'Merriweather', serif;
@@ -109,7 +74,6 @@ main
     border-radius: 19px;
     padding: 0 15px 0 20px;
     display: flex;
-<<<<<<< HEAD
     justify-content: space-between;
     align-items: center;
 }
@@ -175,7 +139,7 @@ main
 }
 .texto-apresentacao {
     font-size: 0.88rem;
-    color: var(--cor-texto-principal);
+    color: var(--cor-texto-secundario);
     text-align: justify;
     line-height: 1.6;
 }
@@ -251,12 +215,4 @@ hr{
     .img-placeholder.tall {
         height: 210px;
     }
-=======
-    min-height: 100vh;
-}
-.layout 
-{
-    display: flex;
-    min-height: 100vh;
->>>>>>> c4689cd4c4e2bf98d743232bc35938b47f363955
 }
