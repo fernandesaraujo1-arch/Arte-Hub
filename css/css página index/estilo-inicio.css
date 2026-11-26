@@ -10,7 +10,7 @@
 .auth-links a:hover {
     text-decoration: underline;
 }
-.titulo-principal h1 {
+#titulo-principal h1 {
     text-align: center;
     color: var(--cor-texto-principal);
     font-family: 'Merriweather', serif;
@@ -38,7 +38,7 @@
     border-radius: 10px;
     margin-bottom: 20px;
 }
-.texto-apresentacao {
+#texto-apresentacao {
     font-size: 0.88rem;
     color: var(--cor-texto-secundario);
     text-align: justify;
@@ -50,30 +50,4 @@
     font-weight: 900;
     color: var(--cor-texto-principal);
     margin-bottom: 20px;
-}
-@media (max-width: 768px) {
-    .container-geral {
-        flex-direction: column;
-    }
-    .sidebar {
-        width: 100%;
-        border-left: none;
-        border-bottom: 1px solid var(--cor-secundario);
-        padding: 20px;
-        gap: 20px;
-    }
-    .menu-navegaçao ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-    .conteudo-principal {
-        padding: 20px;
-    }
-    .galeria-grid {
-        grid-template-columns: 1fr;
-    }
-    .img-placeholder.tall {
-        height: 210px;
-    }
 }
