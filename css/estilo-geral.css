@@ -1,31 +1,8 @@
-:root 
-{
-    --cor-principal: #F7F4EE;
-    --cor-secundario: #E9E2D5 ;
-    --cor-texto-principal: #222222 ;
-    --cor-texto-secundario: #6B6862 ;
-    --cor-destaque-principal: #C45A43 ;
-    --cor-destaque-secundario: #285C63;
-    --cor-detalhes: #C2A15D;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body
-{
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--cor-principal);
-}
-hr{
-    border: none;
-    border-top: 1px solid var(--cor-detalhes);
-    margin: 25px 0;
-}
-a
-{
-    text-decoration: none;
+.conteudo-principal {
+    flex: 1;
+    padding: 25px 40px 60px 40px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 .logo {
     font-family: 'Merriweather', serif;
@@ -72,6 +49,7 @@ a
     outline: none;
     border-radius: 12px;
     padding: 4px 12px;
+    width: 45rem;
     font-size: 0.85rem;
     color: var(--cor-texto-principal);
     font-family: inherit;
@@ -81,15 +59,6 @@ a
 }
 .input-pesquisa:focus {
     background-color: rbga(255, 255, 255, 0.4);
-}
-.auth-links a {
-    color: var(--cor-destaque-principal);
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-left: 15px;
-}
-.auth-links a:hover {
-    text-decoration: underline;
 }
 .menu-navegaçao ul {
     list-style: none;
@@ -106,4 +75,39 @@ a
 }
 .menu-navegaçao a.active {
     color: #183047;
+}
+.galeria-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+.coluna-obras {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.card-obra {
+    display: flex;
+    flex-direction: column;
+}
+.img-placeholder {
+    width: 100%;
+    height: 210px;
+    background-color: var(--cor-secundario);
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+.img-placeholder.tall {
+    height: 453px;
+}
+.card-obra h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    color: var(--cor-destaque-secundario);
+    opacity: 0.85;
+}
+.card-obra .autor {
+    font-size: 0.85;
+    color: var(--cor-destaque-secundario);
+    opacity: 0.85;
 }

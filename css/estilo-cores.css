@@ -1,0 +1,29 @@
+:root 
+{
+    --cor-principal: #F7F4EE;
+    --cor-secundario: #E9E2D5 ;
+    --cor-texto-principal: #222222 ;
+    --cor-texto-secundario: #6B6862 ;
+    --cor-destaque-principal: #C45A43 ;
+    --cor-destaque-secundario: #285C63;
+    --cor-detalhes: #C2A15D;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-principal);
+}
+hr{
+    border: none;
+    border-top: 1px solid var(--cor-detalhes);
+    margin: 25px 0;
+}
+a
+{
+    text-decoration: none;
+}

@@ -1,0 +1,15 @@
+#filtros {
+    color: var(--cor-texto-secundario);
+    font-family: serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+#filtros:hover {
+    text-decoration: underline;
+}
+.header-topo-descobrir {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;  
+}
