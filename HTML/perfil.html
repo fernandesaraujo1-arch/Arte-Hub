@@ -30,15 +30,18 @@
         <main class="conteudo-principal">
             <header class="header-topo">
                 <nav class="topo">  
-                    <div class="caixa-pesquisa" id="exclusivo-em-perfil">
-                        <input type="search" placeholder="Pesquisar..." class="input-pesquisa">
+                    <div class="caixa-pesquisa">
+                        <form action="/buscar" method="get">
+                            <input type="search" placeholder="Pesquisar..." class="input-pesquisa" required>
+                        </form>
                     </div>
+                </nav>
             </header>
             <div class="perfil">
                 <img src="../imagens/perfil sem foto.png" alt="" class="perfil">
             <h1>Usuário</h1>
             <p class="a-venda">x produtos à venda x desenhos</p>
-            <a href="../HTML/Mensagens.html"><button><strong>Enviar  mensagem</strong></button></a>
+            <a href="../HTML/perfil-editar.html"><button><strong>Editar perfil</strong></button></a>
             <p>Biografia do usuário</p>
             </div>
             <hr>

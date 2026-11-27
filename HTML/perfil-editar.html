@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar perfil</title>
+    <link rel="stylesheet" href="../css/css página perfil/estilo-perfil.css">
+    <link rel="stylesheet" href="../css/estilo-cores.css">
+    <link rel="stylesheet" href="../css/estilo-geral.css">
+</head>
+<body>
+    <div class="container-geral">
+        <aside class="sidebar">
+            <div class="logo">
+                logo
+            </div>
+            <nav class="menu-navegaçao">
+                <div class="row">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li> <a href="Descobrir.html">Descobrir</a> </li>
+                        <li> <a href="Criar-pub-prod.html">Criar</a> </li>
+                        <li> <a href="Notificacoes.html">Notificações</a> </li>
+                        <li> <a href="Mensagens.html">Mensagens</a></li>
+                    </ul>
+                    <hr class="hr">
+                </div>
+            </nav>
+        </aside>
+        <main class="conteudo-principal">
+            <header class="header-topo">
+                <nav class="topo">  
+                    <div class="caixa-pesquisa">
+                        <form action="/buscar" method="get">
+                            <input type="search" placeholder="Pesquisar..." class="input-pesquisa" required>
+                        </form>
+                    </div>
+                </nav>
+            </header>
+             <div class="perfil">
+                <img src="../imagens/perfil sem foto.png" alt="" class="perfil">
+            <h1>Usuário</h1>
+            <p class="a-venda">x produtos à venda x desenhos</p>
+            <a href="../HTML/perfil.html"><button type="submit"><strong>Salvar Alterações</strong></button></a>
+            <p>Biografia do usuário</p>
+            </div>
+            <hr>
+            <div>
+            <form action="/editar-nome" method="get">
+                <label for="Nome-usuário">Nome de Usuário</label><br>
+                <input type="text" id="usuário" name="usuário" placeholder="Digite um nome de usuário...">
+            </form>
+            <form action="/editar-biografia" method="get">
+                <label for="biografia">Biografia</label><br>
+                <input type="text" name="biografia" id="biografia" placeholder="Digite sua biografia...">
+            </form>
+            <form action="/tópicos-maduros" method="get">
+                <label for="escolha">Sua arte envolve tópicos maduros?</label><br>
+                <input type="radio" id="sim" name="grupo" value="sim">
+                <label for="sim">Sim, minha arte envolve tópicos maduros e, portanto, deve ser direcionada apenas para o público acima de 18 anos ou que não se sente desconfortável com esse tipo de conteúdo</label><br>
+                <input type="radio" id="não" name="grupo" value="não">
+                <label for="não">Não, minha arte não envolve tópicos maduros</label><br>
+            </form>
+            <form action="/Editar-dados-comisão" method="get">
+                <label for="Dados-comissão">Dados de Comissão</label><br>
+                <input type="text" name="dados-comissão" id="comissão" placeholder="Digite seus dados de comissão...">
+            </form>
+            <form action="/upload-arte">
+                <input type="file" name="upload" placeholder="Faça upload de sua(s) arte(s) como base...">
+            </form>
+            </div>
+            <a href="../HTML/index.html">Deslogar da conta</a>
+        </main>
+    </div>
+</body>
+</html>

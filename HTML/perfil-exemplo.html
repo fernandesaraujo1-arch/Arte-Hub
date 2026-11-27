@@ -31,8 +31,11 @@
             <header class="header-topo">
                 <nav class="topo">  
                     <div class="caixa-pesquisa" id="exclusivo-em-perfil">
-                        <input type="search" placeholder="Pesquisar..." class="input-pesquisa">
+                        <form action="/buscar" method="get">
+                            <input type="search" placeholder="Pesquisar..." class="input-pesquisa" required>
+                        </form>
                     </div>
+                </nav>
             </header>
             <div class="perfil">
                 <img src="../imagens/perfil bob ross/Bob Ross pfp.jpg" alt="" class="perfil">
