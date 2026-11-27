@@ -28,12 +28,12 @@
     width: 0px;
     height: 100rem;
     border: none;
-    border-left: 3px solid var(--cor-detalhes);
+    border-left: 2.5px solid var(--cor-detalhes);
 }
 .row {
     display: flex;
     flex-direction: row;
-    gap: 10rem;
+    gap: 5rem;
 }
 .header-topo {
     margin-bottom: 25px;

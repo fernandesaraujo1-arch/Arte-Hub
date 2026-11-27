@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Perfil</title>
+    <title>Perfil</title>
     <link rel="stylesheet" href="../css/estilo-cores.css">
     <link rel="stylesheet" href="../css/estilo-geral.css">
+    <link rel="stylesheet" href="../css/css página perfil/estilo-perfil.css">
 </head>
 <body>
     <div class="container-geral">
@@ -29,10 +30,36 @@
         <main class="conteudo-principal">
             <header class="header-topo">
                 <nav class="topo">  
-                    <div class="caixa-pesquisa">
+                    <div class="caixa-pesquisa" id="exclusivo-em-perfil">
                         <input type="search" placeholder="Pesquisar..." class="input-pesquisa">
                     </div>
             </header>
+            <div class="perfil">
+                <img src="../imagens/perfil sem foto.png" alt="" class="perfil">
+            <h1>Usuário</h1>
+            <p class="a-venda">x produtos à venda x desenhos</p>
+            <a href="../HTML/Mensagens.html"><button><strong>Enviar  mensagem</strong></button></a>
+            <p>Biografia do usuário</p>
+            </div>
+            <hr>
+            <div class="produtos">
+                <h2>Produtos</h2>
+                <div class="galeria-grid">
+                    <div class="coluna-obras">
+                        <article class="card-obra">
+                            <div class="img-placeholder"></div>
+                            <h3>Nome da Obra</h3>
+                            <p class="Preço">R$XX,XX</p>
+                        </article>
+                    </div>
+                    <div class="coluna-obras">
+                        <article class="card-obra">
+                            <div class="img-placeholder tall"></div>
+                            <h3>Nome da Obra</h3>
+                            <p class="Preço">R$XX,XX</p>
+                        </article>
+                    </div>
+                </div>
         </main>
     </div>
 </body>
